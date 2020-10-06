@@ -1,0 +1,14 @@
+#profileRepos {
+  display: flex;
+  justify-content: center;
+}
+#profileInfo {
+  display: flex;
+  /* justify-content: center; */
+  align-items: end;
+  flex-flow: column;
+}
+.profilePic {
+  width: 50%;
+  border-radius: 50%;
+}
