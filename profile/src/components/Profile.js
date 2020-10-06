@@ -10,16 +10,25 @@ export default () => {
   useEffect(() => {
     dispatch(getProfile())
   }, [])
-  // console.log(profileData)
+  console.log(profileData)
   return (
-    <div id="profileRepos">
-      <div id="profileInfo">
-        <img className="profilePic" src={profileData.avatar_url} />
-        <span>{profileData.name}</span>
-        <span>{profileData.location}</span>
-        {/* <span>{profileData.html_url}</span> */}
+    <div>
+      <div id="nav">
+        <button>Overview</button>
+        <button>Repositories {profileData.public_repos} </button>
+        <button>Projects</button>
+        <button>Packages</button>
       </div>
-      <div>
+      <div id="profileRepos">
+        <div id="profileInfo">
+          <img id="profilePic" src={profileData.avatar_url} />
+          <span>{profileData.name}</span>
+          <button>Edit Profile</button>
+        <span>{profileData.followers} followers • {profileData.following} following</span>
+          <span>{profileData.location}</span>
+          <span>jesselharvey@gmail.com</span>
+          {/* <span>{profileData.html_url}</span> */}
+        </div>
         <Repos />
       </div>
     </div>

@@ -13,12 +13,23 @@ export default () => {
   console.log(reposData)
   return (
     <div id="repoContainer">
-      
+      <div id="searchDiv">
+        <input type="text"></input>
+        <select>
+          <option value="type">Type</option>
+        </select>
+        <select>
+          <option>Language</option>
+        </select>
+      </div>
       {reposData.map((repo) => (
-        <div>
-          <a href={repo.html_url}>
+        <div className="repo">
+          <div className="nameDiv">
+          <a className="name" href={repo.html_url}>
             <span>{repo.name}</span>
           </a>
+          <button className="starBtn">Star</button>
+          </div>
           <span>{repo.language}</span>
         </div>
       ))}

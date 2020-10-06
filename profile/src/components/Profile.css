@@ -1,14 +1,30 @@
 #profileRepos {
   display: flex;
   justify-content: center;
+  margin-left: 20%;
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  /* padding-right: 17.5%; */
+  margin-left: 4.5%;
 }
 #profileInfo {
   display: flex;
   /* justify-content: center; */
-  align-items: end;
+  /* align-items: end; */
   flex-flow: column;
+  width: 15%;
 }
-.profilePic {
-  width: 50%;
+#profilePic {
+  width: 110%;
   border-radius: 50%;
+  align-self: flex-end;
+}
+#profileInfo > * {
+  margin: 5% 0;
+}
+#nav > button {
+  width: 10%;
+  padding: 1% 0;
 }

@@ -1,0 +1,36 @@
+#repoContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  margin-left: 1.5%;
+  padding-right: 20%;
+}
+.repo {
+  display: flex;
+  flex-flow: column;
+  padding: 2% 0;
+  border-top: 1px solid;
+}
+.name > span {
+  font-size: 18px;
+}
+.name {
+  color: blue;
+  text-decoration: none;
+  margin-bottom: 3%;
+}
+span {
+  font-size: 13px;
+}
+.nameDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.starBtn {
+  width: 10%;
+  height: fit-content;
+}
+#searchDiv {
+  display: flex;
+  margin: 1.5% 0;
+}
